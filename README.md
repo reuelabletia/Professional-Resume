@@ -1,27 +1,35 @@
-# 💼 Reuel Haylar Abletia
+# 💼 Reuel Haylar Abletia — Professional Resume
 
-[![Live Demo](https://img.shields.io/badge/View_Live_Site-00bfff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://reuelabletia.github.io/Professional-Resume/)
+<a href="https://reuelabletia.github.io/Professional-Resume/" target="_blank">
+    <img src="https://img.shields.io/badge/View_Live_Site-00bfff?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
+</a>
 
-A modern, responsive HTML/CSS resume showcasing my skills, experience, and certifications.  
-Built for speed, readability, and accessibility.
+A **modern, responsive, and elegant** HTML/CSS resume showcasing my **skills**, **experience**, and **certifications**.  
+Designed with **speed**, **readability**, and **accessibility** in mind.
 
 ---
 
 ## 📌 Features
-- Responsive design (mobile + desktop)
-- Clean typography & layout
-- Optimized for readability
-- Easy to update via HTML/CSS
+✨ Fully responsive (works on **mobile, tablet, and desktop**)  
+✨ Clean, professional typography & balanced layout  
+✨ Optimized for **readability** and **fast loading**  
+✨ Easy to maintain — update content via HTML/CSS  
+
+---
 
 ## 🚀 Tech Stack
-- HTML5
-- CSS3 (Custom Styling)
-- Google Fonts
-- Font Awesome Icons
+- **HTML5** — Semantic markup
+- **CSS3** — Custom styling with modern best practices
+- **Google Fonts** — For a professional look
+- **Font Awesome** — For clean, scalable icons
 
 ---
 
 ## 📫 Contact
-📧 Email: [abletiareuel@gmail.com](mailto:abletiareuel@gmail.com)  
-💼 LinkedIn: [linkedin.com/in/reuelabletia](https://www.linkedin.com/in/reuelabletia/)  
-📍 Location: Pasay, Manila
+📧 **Email:** [abletiareuel@gmail.com](mailto:abletiareuel@gmail.com)  
+💼 **LinkedIn:** [linkedin.com/in/reuelabletia](https://www.linkedin.com/in/reuelabletia/)  
+📍 **Location:** Pasay, Manila  
+
+---
+
+⭐ *If you like this resume, consider giving it a star on GitHub!*  
