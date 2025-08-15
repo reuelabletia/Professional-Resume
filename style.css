@@ -1,9 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0 auto; /* Center the body content */
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
+    max-width: 960px; /* Limit content width on larger screens */
 }
 
 header {
@@ -52,6 +53,7 @@ li {
     margin-bottom: 20px;
 }
 
+/* These sections already have default block behavior, so they stack well */
 .skills,
 .professional-skills,
 .experience,
@@ -70,13 +72,99 @@ li {
 .icon {
     margin-right: 8px;
     color: #007bff;
+    vertical-align: middle; /* Ensures icons align vertically with text */
 }
 
 a {
     text-decoration: none;
     color: #007bff;
+    vertical-align: middle; /* Ensures links align vertically with icons/text */
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* New rule for the contact groups */
+.contact-group {
+    white-space: nowrap; /* PREVENTS line breaks within this span */
+    display: inline-block; /* Allows margins and vertical alignment to work correctly */
+    /* Add some margin to separate groups and the | visually */
+    margin: 0 5px; /* Adjust as needed for spacing between contact items and separators */
+}
+
+/* -------------------- Responsive Design -------------------- */
+
+/* Media Query for screens up to 768px wide (e.g., tablets) */
+@media (max-width: 768px) {
+    body {
+        padding: 15px; /* Reduce overall padding */
+    }
+
+    h1 {
+        font-size: 2em; /* Slightly smaller heading on tablets */
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    section {
+        padding: 12px; /* Reduce section padding */
+        margin: 8px 0; /* Adjust section margin */
+    }
+
+    .contact-info p {
+        /* Allow paragraph to wrap, but items inside .contact-group won't break */
+        line-height: 1.6; /* Slightly increase line height for better readability on smaller screens */
+    }
+}
+
+/* Media Query for screens up to 480px wide (e.g., mobile phones) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Further reduce overall padding for small screens */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Smaller heading on mobile */
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 10px; /* Further reduce section padding */
+        margin: 7px 0;
+    }
+
+    ul {
+        padding-left: 15px; /* Reduce list indentation */
+    }
+
+    li {
+        margin: 5px 0; /* Reduce space between list items */
+    }
+
+    .contact-info {
+        font-size: 0.95em; /* Slightly smaller contact info text */
+    }
+
+    .footer {
+        font-size: 0.8em; /* Smaller footer text */
+    }
+
+    /* Adjust spacing for contact items on very small screens */
+    .contact-group {
+        margin: 0 2px; /* Tighter spacing on small screens */
+    }
 }
