@@ -168,3 +168,52 @@ a:hover {
         margin: 0 2px; /* Tighter spacing on small screens */
     }
 }
+
+/* -------------------- Print Specific Styles (for PDF export) -------------------- */
+@media print {
+    body {
+        background-color: #fff; /* Ensure white background for printing */
+        /* These properties are crucial to ensure colors and shadows are printed */
+        -webkit-print-color-adjust: exact; /* For WebKit browsers (Chrome, Safari) */
+        print-color-adjust: exact;         /* Standard property */
+        
+        margin: 0; /* Remove default browser print margins */
+        padding: 1cm; /* Set custom print margins (adjust as needed) */
+        max-width: none; /* Allow content to use full page width available within print margins */
+    }
+
+    /* Prevent sections from breaking across pages */
+    section {
+        page-break-inside: avoid; /* This is the key property */
+    }
+
+    /* Ensure a heading isn't left alone at the very bottom of a page */
+    h2 {
+        page-break-after: avoid;
+    }
+
+    /* Also prevent lists and list items from breaking where possible */
+    ul, li {
+        page-break-inside: avoid;
+    }
+
+    /* Ensure backgrounds and box-shadows are printed (default for @media print is usually to remove them) */
+    header, section, .footer {
+        background: white; /* Explicitly set background if it's part of design */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Retain box shadow */
+        /* If you have other specific colors or gradients, ensure they are here */
+    }
+
+    /* Links and icons should retain their original colors as per design */
+    a, .icon {
+        color: inherit; /* Inherit color from parent, or set specific color if desired */
+        text-decoration: none; /* Keep links without underline in print, if that's preferred. Change to 'underline' if you want them to be obvious. */
+    }
+
+    /* The contact groups should still behave as non-breaking units */
+    .contact-group {
+        white-space: nowrap;
+        display: inline-block;
+        margin: 0 5px; /* Keep consistent spacing */
+    }
+}
