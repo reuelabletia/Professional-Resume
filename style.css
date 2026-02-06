@@ -5,11 +5,12 @@ body {
     background-color: #f4f4f4;
     color: #333;
     max-width: 960px; /* Limit content width on larger screens */
+    line-height: 1.6; /* Increased default line height for better readability */
 }
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased margin for better separation */
 }
 
 h1 {
@@ -18,19 +19,21 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
+    font-size: 1.6em; /* Slightly increased for more prominence */
+    margin: 15px 0 10px; /* Adjusted margin for H2 */
+    padding-bottom: 5px; /* Small padding to lift content slightly */
+    border-bottom: 1px solid #eee; /* Subtle separator for clear section start */
 }
 
 h3 {
-    font-size: 1.2em;
-    margin: 5px 0;
+    font-size: 1.3em; /* Slightly increased for better hierarchy */
+    margin: 15px 0 5px; /* Adjusted margin for H3 */
 }
 
 section {
     background: white;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 20px 25px; /* Increased padding (top/bottom and left/right) for more breathing room */
+    margin-bottom: 25px; /* Increased bottom margin between sections for better separation */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -38,19 +41,26 @@ section {
 /* Improved list readability */
 ul {
     list-style-type: disc; /* standard bullet points */
-    padding-left: 20px; /* indentation for clarity */
-    margin-top: 5px;
-    margin-bottom: 10px;
+    padding-left: 25px; /* Increased indentation for clarity */
+    margin-top: 10px; /* Adjusted margin top for ul */
+    margin-bottom: 10px; /* Adjusted margin bottom for ul */
+    line-height: 1.6; /* Ensured consistent line height for list items */
 }
 
 li {
-    margin: 6px 0;
-    line-height: 1.5;
+    margin: 8px 0; /* Slightly increased space between list items */
+    line-height: 1.6; /* Explicitly set line height for list items */
+}
+
+p {
+    margin-bottom: 1em; /* Consistent bottom margin for paragraphs */
+    line-height: 1.6; /* Explicitly set line height for paragraphs */
 }
 
 /* Contact info */
 .contact-info {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Increased margin for better separation from professional summary */
+    line-height: 1.6; /* Consistent line height for contact info */
 }
 
 /* These sections already have default block behavior, so they stack well */
@@ -59,14 +69,15 @@ li {
 .experience,
 .education,
 .certifications {
-    margin-bottom: 20px;
+    /* margin-bottom is now handled by the general 'section' rule */
 }
 
 .footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px; /* Increased margin for better separation */
     font-size: 0.9em;
     color: #777;
+    padding-top: 10px; /* Added padding to lift text from bottom edge of footer visually */
 }
 
 .icon {
@@ -89,8 +100,7 @@ a:hover {
 .contact-group {
     white-space: nowrap; /* PREVENTS line breaks within this span */
     display: inline-block; /* Allows margins and vertical alignment to work correctly */
-    /* Add some margin to separate groups and the | visually */
-    margin: 0 5px; /* Adjust as needed for spacing between contact items and separators */
+    margin: 0 7px; /* Adjusted spacing for contact groups */
 }
 
 /* -------------------- Responsive Design -------------------- */
@@ -102,7 +112,39 @@ a:hover {
     }
 
     h1 {
-        font-size: 2em; /* Slightly smaller heading on tablets */
+        font-size: 2.2em; /* Slightly smaller heading on tablets */
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.15em;
+    }
+
+    section {
+        padding: 18px 20px; /* Reduce section padding slightly */
+        margin-bottom: 20px; /* Adjust section margin */
+    }
+
+    .contact-info p {
+        line-height: 1.6; /* Slightly increase line height for better readability on smaller screens */
+    }
+
+    ul {
+        padding-left: 20px; /* Adjust list indentation */
+    }
+}
+
+/* Media Query for screens up to 480px wide (e.g., mobile phones) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Further reduce overall padding for small screens */
+    }
+
+    h1 {
+        font-size: 1.9em; /* Smaller heading on mobile */
     }
 
     h2 {
@@ -114,49 +156,20 @@ a:hover {
     }
 
     section {
-        padding: 12px; /* Reduce section padding */
-        margin: 8px 0; /* Adjust section margin */
-    }
-
-    .contact-info p {
-        /* Allow paragraph to wrap, but items inside .contact-group won't break */
-        line-height: 1.6; /* Slightly increase line height for better readability on smaller screens */
-    }
-}
-
-/* Media Query for screens up to 480px wide (e.g., mobile phones) */
-@media (max-width: 480px) {
-    body {
-        padding: 10px; /* Further reduce overall padding for small screens */
-    }
-
-    h1 {
-        font-size: 1.8em; /* Smaller heading on mobile */
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    h3 {
-        font-size: 1em;
-    }
-
-    section {
-        padding: 10px; /* Further reduce section padding */
-        margin: 7px 0;
+        padding: 15px; /* Further reduce section padding */
+        margin-bottom: 15px;
     }
 
     ul {
-        padding-left: 15px; /* Reduce list indentation */
+        padding-left: 18px; /* Reduce list indentation */
     }
 
     li {
-        margin: 5px 0; /* Reduce space between list items */
+        margin: 6px 0; /* Reduce space between list items */
     }
 
     .contact-info {
-        font-size: 0.95em; /* Slightly smaller contact info text */
+        font-size: 0.9em; /* Slightly smaller contact info text */
     }
 
     .footer {
@@ -165,55 +178,92 @@ a:hover {
 
     /* Adjust spacing for contact items on very small screens */
     .contact-group {
-        margin: 0 2px; /* Tighter spacing on small screens */
+        margin: 0 4px; /* Tighter spacing on small screens */
     }
 }
 
 /* -------------------- Print Specific Styles (for PDF export) -------------------- */
 @media print {
     body {
-        background-color: #fff; /* Ensure white background for printing */
-        /* These properties are crucial to ensure colors and shadows are printed */
-        -webkit-print-color-adjust: exact; /* For WebKit browsers (Chrome, Safari) */
-        print-color-adjust: exact;         /* Standard property */
-        
-        margin: 0; /* Remove default browser print margins */
-        padding: 1cm; /* Set custom print margins (adjust as needed) */
-        max-width: none; /* Allow content to use full page width available within print margins */
+        background-color: #fff;
+        -webkit-print-color-adjust: exact; /* Crucial for retaining colors/shadows */
+        print-color-adjust: exact;         /* Crucial for retaining colors/shadows */
+        margin: 0;
+        padding: 1.5cm; /* Increased print padding for more generous margins */
+        max-width: none;
+        line-height: 1.6; /* Ensure consistent line height for print */
     }
 
-    /* Prevent sections from breaking across pages */
     section {
-        page-break-inside: avoid; /* This is the key property */
+        page-break-after: auto;
+        margin-bottom: 0.7cm; /* Increased bottom margin between sections for print */
+        padding: 15px 20px; /* Adjusted padding for print sections */
+        padding-bottom: 15px; /* Ensure sufficient bottom padding for sections */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* RETAIN BOX SHADOW FOR PRINT */
     }
 
-    /* Ensure a heading isn't left alone at the very bottom of a page */
+    .job-entry {
+        page-break-inside: avoid;
+        page-break-after: auto;
+        margin-bottom: 0.8em; /* Slightly increased space between job entries for print */
+        padding-bottom: 5px; /* Small padding to ensure content isn't too close to the bottom if a break happens */
+        /* If .job-entry should also have a box-shadow (it doesn't by default), you'd add it here */
+        /* box-shadow: 0 1px 3px rgba(0,0,0,0.08); */
+    }
+
     h2 {
         page-break-after: avoid;
+        margin-top: 1em; /* Ensure some space above section titles on print */
+        margin-bottom: 0.5em; /* Space between H2 and the content it introduces */
+        border-bottom: 1px solid #eee; /* RETAIN BORDER BOTTOM FOR H2 IN PRINT */
+        padding-bottom: 3px;
     }
 
-    /* Also prevent lists and list items from breaking where possible */
-    ul, li {
+    h3 {
+        page-break-after: avoid;
+        margin-top: 0.8em; /* Space for H3 */
+        margin-bottom: 0.3em; /* Space below H3 */
+    }
+
+    p {
         page-break-inside: avoid;
+        line-height: 1.6; /* Ensure consistent line height */
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
     }
 
-    /* Ensure backgrounds and box-shadows are printed (default for @media print is usually to remove them) */
-    header, section, .footer {
-        background: white; /* Explicitly set background if it's part of design */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Retain box shadow */
-        /* If you have other specific colors or gradients, ensure they are here */
+    ul {
+        page-break-inside: avoid;
+        padding-left: 20px; /* Adjust list indentation for print */
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        line-height: 1.6; /* Ensure consistent line height */
+    }
+    li {
+        page-break-inside: avoid;
+        margin: 5px 0; /* Adjust space between list items for print */
+        line-height: 1.6; /* Ensure consistent line height */
     }
 
-    /* Links and icons should retain their original colors as per design */
+    header, .footer {
+        background: white; /* Ensure background is white */
+        box-shadow: none; /* Footers and headers usually don't need shadows in print */
+    }
+    
     a, .icon {
-        color: inherit; /* Inherit color from parent, or set specific color if desired */
-        text-decoration: none; /* Keep links without underline in print, if that's preferred. Change to 'underline' if you want them to be obvious. */
+        color: inherit; /* Ensure links and icons keep their colors */
+        text-decoration: none;
     }
 
-    /* The contact groups should still behave as non-breaking units */
     .contact-group {
         white-space: nowrap;
         display: inline-block;
-        margin: 0 5px; /* Keep consistent spacing */
+        margin: 0 5px;
+    }
+    
+    /* Ensure the footer has enough space */
+    .footer {
+        margin-top: 1cm;
+        padding-top: 0;
     }
 }
