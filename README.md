@@ -30,6 +30,13 @@ Designed with **speed**, **readability**, and **accessibility** in mind.
 💼 **LinkedIn:** [linkedin.com/in/reuelabletia](https://www.linkedin.com/in/reuelabletia/)  
 📍 **Location:** Pasay, Manila  
 
+
+## 🙏 Credits & Forking
+This resume was **designed and coded by [Reuel Haylar Abletia](https://github.com/reuelabletia)**.  
+If you fork or use this project, please **keep this attribution** to give credit where it's due.  
+
+Feel free to **customize it** for your own use — just don’t forget to acknowledge the original creator!  
+
 ---
 
 ⭐ *If you like this resume, consider giving it a star on GitHub!*  
