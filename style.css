@@ -186,72 +186,71 @@ a:hover {
 @media print {
     body {
         background-color: #fff;
-        -webkit-print-color-adjust: exact; /* Crucial for retaining colors/shadows */
-        print-color-adjust: exact;         /* Crucial for retaining colors/shadows */
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
         margin: 0;
-        padding: 1.5cm; /* Increased print padding for more generous margins */
+        /* Adjusted padding: 0.8cm top, 1.2cm left/right, 1cm bottom */
+        padding: 0.2cm 1.2cm 1cm; 
         max-width: none;
-        line-height: 1.6; /* Ensure consistent line height for print */
+        line-height: 1.6;
     }
 
     section {
         page-break-after: auto;
-        margin-bottom: 0.7cm; /* Increased bottom margin between sections for print */
-        padding: 15px 20px; /* Adjusted padding for print sections */
-        padding-bottom: 15px; /* Ensure sufficient bottom padding for sections */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* RETAIN BOX SHADOW FOR PRINT */
+        margin-bottom: 0.7cm; 
+        padding: 15px 20px; 
+        padding-bottom: 15px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     }
 
     .job-entry {
         page-break-inside: avoid;
         page-break-after: auto;
-        margin-bottom: 0.8em; /* Slightly increased space between job entries for print */
-        padding-bottom: 5px; /* Small padding to ensure content isn't too close to the bottom if a break happens */
-        /* If .job-entry should also have a box-shadow (it doesn't by default), you'd add it here */
-        /* box-shadow: 0 1px 3px rgba(0,0,0,0.08); */
+        margin-bottom: 0.8em; 
+        padding-bottom: 5px; 
     }
 
     h2 {
         page-break-after: avoid;
-        margin-top: 1em; /* Ensure some space above section titles on print */
-        margin-bottom: 0.5em; /* Space between H2 and the content it introduces */
-        border-bottom: 1px solid #eee; /* RETAIN BORDER BOTTOM FOR H2 IN PRINT */
+        margin-top: 1em; 
+        margin-bottom: 0.5em; 
+        border-bottom: 1px solid #eee; 
         padding-bottom: 3px;
     }
 
     h3 {
         page-break-after: avoid;
-        margin-top: 0.8em; /* Space for H3 */
-        margin-bottom: 0.3em; /* Space below H3 */
+        margin-top: 0.8em; 
+        margin-bottom: 0.3em; 
     }
 
     p {
         page-break-inside: avoid;
-        line-height: 1.6; /* Ensure consistent line height */
+        line-height: 1.6; 
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
 
     ul {
         page-break-inside: avoid;
-        padding-left: 20px; /* Adjust list indentation for print */
+        padding-left: 20px; 
         margin-top: 0.5em;
         margin-bottom: 0.5em;
-        line-height: 1.6; /* Ensure consistent line height */
+        line-height: 1.6; 
     }
     li {
         page-break-inside: avoid;
-        margin: 5px 0; /* Adjust space between list items for print */
-        line-height: 1.6; /* Ensure consistent line height */
+        margin: 5px 0; 
+        line-height: 1.6; 
     }
 
     header, .footer {
-        background: white; /* Ensure background is white */
-        box-shadow: none; /* Footers and headers usually don't need shadows in print */
+        background: white; 
+        box-shadow: none; 
     }
     
     a, .icon {
-        color: inherit; /* Ensure links and icons keep their colors */
+        color: inherit; 
         text-decoration: none;
     }
 
@@ -261,7 +260,6 @@ a:hover {
         margin: 0 5px;
     }
     
-    /* Ensure the footer has enough space */
     .footer {
         margin-top: 1cm;
         padding-top: 0;
